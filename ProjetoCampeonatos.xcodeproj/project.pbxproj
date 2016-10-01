@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		C2205B4B1D96FDF500CA40F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B4A1D96FDF500CA40F0 /* AppDelegate.swift */; };
-		C2205B4D1D96FDF500CA40F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B4C1D96FDF500CA40F0 /* ViewController.swift */; };
+		C2205B4D1D96FDF500CA40F0 /* DetailCampeonatoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B4C1D96FDF500CA40F0 /* DetailCampeonatoController.swift */; };
 		C2205B501D96FDF500CA40F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2205B4E1D96FDF500CA40F0 /* Main.storyboard */; };
 		C2205B531D96FDF500CA40F0 /* ProjetoCampeonatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2205B511D96FDF500CA40F0 /* ProjetoCampeonatos.xcdatamodeld */; };
 		C2205B551D96FDF500CA40F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2205B541D96FDF500CA40F0 /* Assets.xcassets */; };
 		C2205B581D96FDF500CA40F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2205B561D96FDF500CA40F0 /* LaunchScreen.storyboard */; };
+		C2205B631D96FF3A00CA40F0 /* Campeonato+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B611D96FF3A00CA40F0 /* Campeonato+CoreDataClass.swift */; };
+		C2205B641D96FF3A00CA40F0 /* Campeonato+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B621D96FF3A00CA40F0 /* Campeonato+CoreDataProperties.swift */; };
+		C2205B661D96FF7B00CA40F0 /* CampeonatoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B651D96FF7B00CA40F0 /* CampeonatoTableViewController.swift */; };
+		C2205B681D96FFA400CA40F0 /* CampeonatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B671D96FFA400CA40F0 /* CampeonatoTableViewCell.swift */; };
+		C2205B6A1D9703C100CA40F0 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B691D9703C100CA40F0 /* CoreDataTableViewController.swift */; };
+		C2205B6C1D97050600CA40F0 /* EditCampeonatoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2205B6B1D97050600CA40F0 /* EditCampeonatoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2205B471D96FDF500CA40F0 /* ProjetoCampeonatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoCampeonatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2205B4A1D96FDF500CA40F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2205B4C1D96FDF500CA40F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2205B4C1D96FDF500CA40F0 /* DetailCampeonatoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCampeonatoController.swift; sourceTree = "<group>"; };
 		C2205B4F1D96FDF500CA40F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2205B521D96FDF500CA40F0 /* ProjetoCampeonatos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjetoCampeonatos.xcdatamodel; sourceTree = "<group>"; };
 		C2205B541D96FDF500CA40F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2205B571D96FDF500CA40F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2205B591D96FDF500CA40F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2205B611D96FF3A00CA40F0 /* Campeonato+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Campeonato+CoreDataClass.swift"; path = "../Campeonato+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C2205B621D96FF3A00CA40F0 /* Campeonato+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Campeonato+CoreDataProperties.swift"; path = "../Campeonato+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C2205B651D96FF7B00CA40F0 /* CampeonatoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampeonatoTableViewController.swift; sourceTree = "<group>"; };
+		C2205B671D96FFA400CA40F0 /* CampeonatoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampeonatoTableViewCell.swift; sourceTree = "<group>"; };
+		C2205B691D9703C100CA40F0 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		C2205B6B1D97050600CA40F0 /* EditCampeonatoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCampeonatoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,37 @@
 		C2205B491D96FDF500CA40F0 /* ProjetoCampeonatos */ = {
 			isa = PBXGroup;
 			children = (
-				C2205B4A1D96FDF500CA40F0 /* AppDelegate.swift */,
-				C2205B4C1D96FDF500CA40F0 /* ViewController.swift */,
+				C2205B601D96FE3200CA40F0 /* SupportFiles */,
+				C2205B4C1D96FDF500CA40F0 /* DetailCampeonatoController.swift */,
+				C2205B651D96FF7B00CA40F0 /* CampeonatoTableViewController.swift */,
+				C2205B671D96FFA400CA40F0 /* CampeonatoTableViewCell.swift */,
 				C2205B4E1D96FDF500CA40F0 /* Main.storyboard */,
+				C2205B5F1D96FE1200CA40F0 /* CoreDate */,
+				C2205B6B1D97050600CA40F0 /* EditCampeonatoController.swift */,
+			);
+			path = ProjetoCampeonatos;
+			sourceTree = "<group>";
+		};
+		C2205B5F1D96FE1200CA40F0 /* CoreDate */ = {
+			isa = PBXGroup;
+			children = (
+				C2205B691D9703C100CA40F0 /* CoreDataTableViewController.swift */,
+				C2205B611D96FF3A00CA40F0 /* Campeonato+CoreDataClass.swift */,
+				C2205B621D96FF3A00CA40F0 /* Campeonato+CoreDataProperties.swift */,
+				C2205B511D96FDF500CA40F0 /* ProjetoCampeonatos.xcdatamodeld */,
+			);
+			name = CoreDate;
+			sourceTree = "<group>";
+		};
+		C2205B601D96FE3200CA40F0 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C2205B4A1D96FDF500CA40F0 /* AppDelegate.swift */,
 				C2205B541D96FDF500CA40F0 /* Assets.xcassets */,
 				C2205B561D96FDF500CA40F0 /* LaunchScreen.storyboard */,
 				C2205B591D96FDF500CA40F0 /* Info.plist */,
-				C2205B511D96FDF500CA40F0 /* ProjetoCampeonatos.xcdatamodeld */,
 			);
-			path = ProjetoCampeonatos;
+			name = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2205B661D96FF7B00CA40F0 /* CampeonatoTableViewController.swift in Sources */,
+				C2205B641D96FF3A00CA40F0 /* Campeonato+CoreDataProperties.swift in Sources */,
+				C2205B6A1D9703C100CA40F0 /* CoreDataTableViewController.swift in Sources */,
+				C2205B631D96FF3A00CA40F0 /* Campeonato+CoreDataClass.swift in Sources */,
 				C2205B531D96FDF500CA40F0 /* ProjetoCampeonatos.xcdatamodeld in Sources */,
-				C2205B4D1D96FDF500CA40F0 /* ViewController.swift in Sources */,
+				C2205B681D96FFA400CA40F0 /* CampeonatoTableViewCell.swift in Sources */,
+				C2205B6C1D97050600CA40F0 /* EditCampeonatoController.swift in Sources */,
+				C2205B4D1D96FDF500CA40F0 /* DetailCampeonatoController.swift in Sources */,
 				C2205B4B1D96FDF500CA40F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

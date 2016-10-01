@@ -1,26 +1,171 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TPP-z2-3M5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Campeonato-->
+        <scene sceneID="vsX-wj-IAK">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="enG-ex-etI" customClass="DetailCampeonatoController" customModule="ProjetoCampeonatos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="IO4-Cj-TWr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lk2-As-sBR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="beO-Sh-mrs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cTH-vf-DFs">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38H-yK-HEl">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parceiro" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gxS-OB-cQL">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoria" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXQ-hR-149">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Local" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7A-jI-MMm">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y4V-Jc-pT3">
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data inicio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jg-Mr-bqG">
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data fim" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cL-ve-fxu">
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3cL-ve-fxu" secondAttribute="trailing" id="4Kp-PU-6F6"/>
+                                    <constraint firstAttribute="trailing" secondItem="dXQ-hR-149" secondAttribute="trailing" id="AxI-db-IiK"/>
+                                    <constraint firstAttribute="trailing" secondItem="k7A-jI-MMm" secondAttribute="trailing" id="VHA-pl-Ud5"/>
+                                    <constraint firstAttribute="trailing" secondItem="38H-yK-HEl" secondAttribute="trailing" id="aSA-x5-Zy8"/>
+                                    <constraint firstAttribute="trailing" secondItem="gxS-OB-cQL" secondAttribute="trailing" id="akW-av-ta2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cTH-vf-DFs" firstAttribute="leading" secondItem="beO-Sh-mrs" secondAttribute="leadingMargin" constant="10" id="9fH-JQ-tnE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cTH-vf-DFs" secondAttribute="trailing" constant="10" id="gQM-aV-Ooy"/>
+                            <constraint firstItem="cTH-vf-DFs" firstAttribute="top" secondItem="IO4-Cj-TWr" secondAttribute="bottom" constant="10" id="gxq-t4-PRB"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Campeonato" id="lhj-Xg-BZs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yrd-Cq-eqU">
+                            <connections>
+                                <action selector="btnSaveClick:" destination="enG-ex-etI" id="ghM-2u-aVZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="edtCategoria" destination="dXQ-hR-149" id="fE4-J2-OEu"/>
+                        <outlet property="edtDatafim" destination="3cL-ve-fxu" id="JIu-CH-djn"/>
+                        <outlet property="edtDatainicio" destination="5jg-Mr-bqG" id="q76-Yy-0Qs"/>
+                        <outlet property="edtLocal" destination="k7A-jI-MMm" id="Xjx-1g-ZBP"/>
+                        <outlet property="edtNome" destination="38H-yK-HEl" id="y9E-Zt-5tj"/>
+                        <outlet property="edtParceiro" destination="gxS-OB-cQL" id="fNf-cX-9Pc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yx8-f8-ZHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2026" y="-466"/>
+        </scene>
+        <!--Campeonatos-->
+        <scene sceneID="bIQ-AQ-19a">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="mGT-3N-ryj" customClass="CampeonatoTableViewController" customModule="ProjetoCampeonatos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="b3r-oO-nXk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="BJh-DM-IC4" detailTextLabel="i2i-SF-vCg" style="IBUITableViewCellStyleSubtitle" id="y6h-1D-jit" customClass="CampeonatoTableViewCell" customModule="ProjetoCampeonatos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y6h-1D-jit" id="sRW-Ty-z3l">
+                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BJh-DM-IC4">
+                                            <frame key="frameInset" minX="15" minY="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i2i-SF-vCg">
+                                            <frame key="frameInset" minX="15" minY="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="enG-ex-etI" kind="show" identifier="segueEditar" id="a57-BU-NB4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mGT-3N-ryj" id="beX-qs-W27"/>
+                            <outlet property="delegate" destination="mGT-3N-ryj" id="fRh-kZ-6pz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Campeonatos" id="d3L-aa-Uds">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vE0-Qx-6ix">
+                            <connections>
+                                <segue destination="enG-ex-etI" kind="show" identifier="segueAdicionar" id="yr9-lC-DjG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I96-8m-pj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="-465"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MK4-zA-Aar">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TPP-z2-3M5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d8k-65-xhU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mGT-3N-ryj" kind="relationship" relationship="rootViewController" id="5ml-IQ-JfW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bL-nW-8jC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="-465"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yr9-lC-DjG"/>
+    </inferredMetricsTieBreakers>
 </document>
